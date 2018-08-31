@@ -50,9 +50,14 @@ body {
   position: absolute;
   border-radius: 5px;
   background: #1C7CCC;
+   backface-visibility: hidden;
 }
 
 /* Flip effect */
 .memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face {
   transform: rotateY(180deg);
 }
