@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://medium.freecodecamp.org/media/1c4c6a1bcb25128fcb202608fec54db5?postId=e542c4447eae -->
+<html data-ember-extension="1"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Medium</title><meta name="twitter:widgets:csp" content="on"><meta name="robots" content="noindex"><!--<base target="_blank">--><base href="." target="_blank"><style>body {text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif; font-weight: 400; color: #333332; font-size: 18px; line-height: 1.4; margin: 0; background-color: white; overflow: hidden;}iframe {max-width: 100%;}</style></head><body><style>.gist .gist-file { margin-bottom: 0 !important; }.gist { text-rendering: auto; }</style><script src="./26badc104b4307c640ffded69284302f.js" charset="utf-8"></script><link rel="stylesheet" href="./gist-embed-51733eabd598f6dd7e02254bb5e3dc72.css"><div id="gist91404235" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-memory-game-shuffle-call-diff" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-diff">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tbody><tr>
+        <td id="file-memory-game-shuffle-call-diff-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC1" class="blob-code blob-code-inner js-file-line">  const cards = document.querySelectorAll('.memory-card');</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC3" class="blob-code blob-code-inner js-file-line">  let hasFlippedCard = false;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC4" class="blob-code blob-code-inner js-file-line">  let lockBoard = false;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC5" class="blob-code blob-code-inner js-file-line">  let [firstCard, ], secondCard;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC6" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC7" class="blob-code blob-code-inner js-file-line">  function flipCard() {</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC8" class="blob-code blob-code-inner js-file-line">    if (lockBoard) return;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC9" class="blob-code blob-code-inner js-file-line">    if (this === firstCard) return;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC10" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC11" class="blob-code blob-code-inner js-file-line">    this.classList.add('flip');</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC12" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC13" class="blob-code blob-code-inner js-file-line">    if (!hasFlippedCard) {</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC14" class="blob-code blob-code-inner js-file-line">      hasFlippedCard = true;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC15" class="blob-code blob-code-inner js-file-line">      firstCard = this;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC16" class="blob-code blob-code-inner js-file-line">      return;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC17" class="blob-code blob-code-inner js-file-line">    }</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC18" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC19" class="blob-code blob-code-inner js-file-line">    secondCard = this;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC20" class="blob-code blob-code-inner js-file-line">    lockBoard = true;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC21" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC22" class="blob-code blob-code-inner js-file-line">    checkForMatch();</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC23" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC24" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC25" class="blob-code blob-code-inner js-file-line">  function checkForMatch() {</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC26" class="blob-code blob-code-inner js-file-line">    let isMatch = firstCard.dataset.name === secondCard.dataset.name;</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC27" class="blob-code blob-code-inner js-file-line">    isMatch ? disableCards() : unflipCards();</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC28" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC29" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC30" class="blob-code blob-code-inner js-file-line">  function disableCards() {</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC31" class="blob-code blob-code-inner js-file-line">    firstCard.removeEventListener('click', flipCard);</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC32" class="blob-code blob-code-inner js-file-line">    secondCard.removeEventListener('click', flipCard);</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC33" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC34" class="blob-code blob-code-inner js-file-line">    resetBoard();</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC35" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC36" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC37" class="blob-code blob-code-inner js-file-line">  function unflipCards() {</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC38" class="blob-code blob-code-inner js-file-line">    setTimeout(() =&gt; {</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC39" class="blob-code blob-code-inner js-file-line">      firstCard.classList.remove('flip');</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC40" class="blob-code blob-code-inner js-file-line">      secondCard.classList.remove('flip');</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC41" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC42" class="blob-code blob-code-inner js-file-line">      resetBoard();</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC43" class="blob-code blob-code-inner js-file-line">    }, 1500);</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC44" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L45" class="blob-num js-line-number" data-line-number="45"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC45" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L46" class="blob-num js-line-number" data-line-number="46"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC46" class="blob-code blob-code-inner js-file-line">  function resetBoard() {</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L47" class="blob-num js-line-number" data-line-number="47"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC47" class="blob-code blob-code-inner js-file-line">    [hasFlippedCard, lockBoard] = [false, false];</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L48" class="blob-num js-line-number" data-line-number="48"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC48" class="blob-code blob-code-inner js-file-line">    [firstCard, secondCard] = [null, null];</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L49" class="blob-num js-line-number" data-line-number="49"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC49" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L50" class="blob-num js-line-number" data-line-number="50"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC50" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L51" class="blob-num js-line-number" data-line-number="51"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC51" class="blob-code blob-code-inner js-file-line"><span class="pl-mi1"><span class="pl-mi1">+</span> (function shuffle() {</span></td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L52" class="blob-num js-line-number" data-line-number="52"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC52" class="blob-code blob-code-inner js-file-line"><span class="pl-mi1"><span class="pl-mi1">+</span>   cards.forEach(card =&gt; {</span></td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L53" class="blob-num js-line-number" data-line-number="53"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC53" class="blob-code blob-code-inner js-file-line"><span class="pl-mi1"><span class="pl-mi1">+</span>     let ramdomPos = Math.floor(Math.random() * 12);</span></td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L54" class="blob-num js-line-number" data-line-number="54"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC54" class="blob-code blob-code-inner js-file-line"><span class="pl-mi1"><span class="pl-mi1">+</span>     card.style.order = ramdomPos;</span></td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L55" class="blob-num js-line-number" data-line-number="55"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC55" class="blob-code blob-code-inner js-file-line"><span class="pl-mi1"><span class="pl-mi1">+</span>   });</span></td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L56" class="blob-num js-line-number" data-line-number="56"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC56" class="blob-code blob-code-inner js-file-line"><span class="pl-mi1"><span class="pl-mi1">+</span> })();</span></td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L57" class="blob-num js-line-number" data-line-number="57"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC57" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-memory-game-shuffle-call-diff-L58" class="blob-num js-line-number" data-line-number="58"></td>
+        <td id="file-memory-game-shuffle-call-diff-LC58" class="blob-code blob-code-inner js-file-line">  cards.forEach(card =&gt; card.addEventListener('click', flipCard));</td>
+      </tr>
+</tbody></table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/code-sketch/26badc104b4307c640ffded69284302f/raw/c420c8c7b872f89772d4204aa521635fc85cc2b3/memory-game-shuffle-call.diff" style="float:right">view raw</a>
+        <a href="https://gist.github.com/code-sketch/26badc104b4307c640ffded69284302f#file-memory-game-shuffle-call-diff">memory-game-shuffle-call.diff</a>
+        hosted with ❤ by <a href="https://github.com/">GitHub</a>
+      </div>
+    </div>
+</div>
+<script>var height = -1; var delayMs = 200;function notifyResize(height) {height = height ? height : document.documentElement.offsetHeight; var resized = false; if (window.donkey && donkey.resize) {donkey.resize(height); resized = true;}if (parent && parent._resizeIframe) {var obj = {iframe: window.frameElement, height: height}; parent._resizeIframe(obj); resized = true;}if (window.location && window.location.hash === "#amp=1" && window.parent && window.parent.postMessage) {window.parent.postMessage({sentinel: "amp", type: "embed-size", height: height}, "*");}if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.resize) {window.webkit.messageHandlers.resize.postMessage(height); resized = true;}return resized;}function maybeResize() {if (document.documentElement.offsetHeight != height && notifyResize()) {height = document.documentElement.offsetHeight;}delayMs = Math.min(delayMs * 2, 1000000); setTimeout(maybeResize, delayMs);}maybeResize();</script></body></html>
