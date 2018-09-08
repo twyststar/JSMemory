@@ -121,11 +121,14 @@ body {
 #win-display {
   font-size: 4rem;
   margin-bottom: 1%;
+  background: linear-gradient(to right, rgb(46, 212, 241) 0%, #af0211 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .play-again-button {
   color: rgb(25, 35, 44);
-  background-color: rgb(219, 204, 92);
+  background: linear-gradient(to left, rgb(95, 182, 139) 0%, #b871f1 100%);
   border: none;
   border-radius: 2px;
   font-size: 1.5rem;
