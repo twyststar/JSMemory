@@ -30,8 +30,8 @@ _HTML, CSS, Javascript_
 
 * [] _Customize look_
 
-* [] _Add turn counter_
+* [x] _Add turn counter_
 
-* [] _Add interactive message for a win including number of turns_
+* [x] _Add interactive message for a win including number of turns_
 
-* [] _Add restart button_
+* [x] _Add restart button_
