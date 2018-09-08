@@ -39,20 +39,16 @@ function checkForMatch() {
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
   isMatch ? disableCards() : unFlipCards();
   counter += 1;
+  checkWin();
   document.getElementById('counter-display').innerHTML = "TURNS: " + counter;
 }
 
 // Remove click flip from cards, effectively removing them from the game
+// Check for 6 matches, trigger win banner div visibility
 function disableCards() {
   firstCard.removeEventListener('click', flipCard);
   secondCard.removeEventListener('click', flipCard);
   matches += 1;
-  if (matches === 6) {
-    counter += 1;
-    document.getElementById("win-display").innerHTML = "You won in : " + counter + " turns!";
-    winDiv.classList.remove("hidden");
-    wrapper.classList.add("faded");
-  }
   resetBoard();
 }
 
@@ -62,7 +58,6 @@ function unFlipCards() {
   setTimeout(() => {
     firstCard.classList.remove('flip');
     secondCard.classList.remove('flip');
-
     resetBoard();
   }, 1500); 
 }
@@ -71,6 +66,14 @@ function unFlipCards() {
 function resetBoard() {
   [hasFlippedCard, lockBoard] = [false, false];
   [firstCard, secondCard] = [null, null];
+}
+
+function checkWin() {
+  if (matches === 6) {
+    document.getElementById("win-display").innerHTML = "You won in " + counter + " turns!";
+    winDiv.classList.remove("hidden");
+    wrapper.classList.add("faded");
+  }
 }
 
 (function shuffle() {
