@@ -6,72 +6,89 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="game-container">
-    <section class="memory-game">
-    
-      <div class="memory-card" data-framework="react">
-        <img class="front-face" src="img/react.svg" alt="React logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="react">
-        <img class="front-face" src="img/react.svg" alt="React logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="angular">
-        <img class="front-face" src="img/angular.svg" alt="Angular logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="angular">
-        <img class="front-face" src="img/angular.svg" alt="Angular logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="ember">
-        <img class="front-face" src="img/ember.svg" alt="Ember logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="ember">
-        <img class="front-face" src="img/ember.svg" alt="Ember logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="vue">
-        <img class="front-face" src="img/vue.svg" alt="Vue logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="vue">
-        <img class="front-face" src="img/vue.svg" alt="Vue logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="backbone">
-        <img class="front-face" src="img/backbone.svg" alt="Backbone logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="backbone">
-        <img class="front-face" src="img/backbone.svg" alt="Backbone logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="aurelia">
-        <img class="front-face" src="img/aurelia.svg" alt="Aurelia logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    
-      <div class="memory-card" data-framework="aurelia">
-        <img class="front-face" src="img/aurelia.svg" alt="Aurelia logo">
-        <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
-      </div>
-    </section>
+  <div id="win-div" class="win-banner hidden">
+    <p id="win-display">
+      
+    </p>
+    <button class="play-again-button" onclick="reloadPage()" >
+      Play Again
+    </button>
   </div>
-  <div class="sidebar">
-    <button class="reset-button">Reset</button>
+  <div id="wrapper" class="wrapper">
+    <div class="game-container">
+      <section class="memory-game">
+    
+        <div class="memory-card" data-framework="react">
+          <img class="front-face" src="img/react.svg" alt="React logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="react">
+          <img class="front-face" src="img/react.svg" alt="React logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="angular">
+          <img class="front-face" src="img/angular.svg" alt="Angular logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="angular">
+          <img class="front-face" src="img/angular.svg" alt="Angular logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="ember">
+          <img class="front-face" src="img/ember.svg" alt="Ember logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="ember">
+          <img class="front-face" src="img/ember.svg" alt="Ember logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="vue">
+          <img class="front-face" src="img/vue.svg" alt="Vue logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="vue">
+          <img class="front-face" src="img/vue.svg" alt="Vue logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="backbone">
+          <img class="front-face" src="img/backbone.svg" alt="Backbone logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="backbone">
+          <img class="front-face" src="img/backbone.svg" alt="Backbone logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="aurelia">
+          <img class="front-face" src="img/aurelia.svg" alt="Aurelia logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+    
+        <div class="memory-card" data-framework="aurelia">
+          <img class="front-face" src="img/aurelia.svg" alt="Aurelia logo">
+          <img class="back-face" src="img/js-badge.svg" alt="Memory card back with javascript logo">
+        </div>
+      </section>
+    </div>
+    <div class="sidebar">
+      <div id="counter-display" class="sidebar-content">
+      <p>
+        TURNS:
+      </p>
+      </div>
+      <button id="reset-button" class="sidebar-content reset-button" type="button" onclick="reloadPage()">
+        START OVER
+      </button>
+    </div>
   </div>
   
   <script src="./scripts.js"></script>

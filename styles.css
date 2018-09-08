@@ -7,11 +7,20 @@
 
 body {
   background: rgb(140, 140, 141);
+  position: relative;
+}
+
+.wrapper {
+  background: rgb(140, 140, 141);
+  display:flex;
+  flex-direction: row;
+  padding: 2%;
 }
 
 .game-container {
   height: 100vh;
   display: flex;
+  flex-direction: column;
 }
 
 /* Defines game board */
@@ -32,7 +41,6 @@ body {
   height: calc(33.333% - 10px);
   margin: 5px;
   position: relative;
-  
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
@@ -65,9 +73,72 @@ body {
   transform: rotateY(180deg);
 }
 
-.reset-button {
-  margin-bottom: 5px;
-  height: 20px;
-  width: 65px;
+.sidebar {
+  padding: 2%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1%;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: black;
+  margin-left: 25%;
+  margin-right: 2%;
+  margin-top: 10%;
   border-radius: 5px;
+  border: none;
+  text-align: center;
+}
+
+#counter-display {
+  border-radius: 0;
+}
+
+.reset-button {
+  margin-top: 35%;
+  background-color: rgb(25, 35, 44);
+  color: rgb(219, 204, 92);
+}
+
+.win-banner {
+  border-radius: 2px;
+  text-align: center;
+  height: 30%;
+  width: 95%;
+  margin: 15% 1%;
+  color: rgb(219, 204, 92);
+  background-color: rgb(25, 35, 44);
+  position: absolute;
+  z-index: 1;
+  padding: 2%;
+}
+
+#win-display {
+  font-size: 4rem;
+  margin-bottom: 1%;
+}
+
+.play-again-button {
+  color: rgb(25, 35, 44);
+  background-color: rgb(219, 204, 92);
+  border: none;
+  border-radius: 2px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1%;
+  width: 30%;
+}
+
+.faded {
+  opacity: .5;
+}
+
+.hidden {
+  display: none;
 }
