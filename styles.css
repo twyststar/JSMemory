@@ -6,9 +6,12 @@
 }
 
 body {
+  background: rgb(140, 140, 141);
+}
+
+.game-container {
   height: 100vh;
   display: flex;
-  background: #060AB2;
 }
 
 /* Defines game board */
@@ -29,7 +32,7 @@ body {
   height: calc(33.333% - 10px);
   margin: 5px;
   position: relative;
-  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+  
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform .5s;
@@ -49,7 +52,7 @@ body {
   padding: 20px;
   position: absolute;
   border-radius: 5px;
-  background: #1C7CCC;
+  background: rgb(25, 35, 44);
    backface-visibility: hidden;
 }
 
@@ -60,4 +63,11 @@ body {
 
 .front-face {
   transform: rotateY(180deg);
+}
+
+.reset-button {
+  margin-bottom: 5px;
+  height: 20px;
+  width: 65px;
+  border-radius: 5px;
 }

@@ -28,10 +28,10 @@ _HTML, CSS, Javascript_
 
 ## TODO
 
-*_Customize look_
+* [] _Customize look_
 
-*_Add turn counter_
+* [] _Add turn counter_
 
-*_Add interactive message for a win including number of turns_
+* [] _Add interactive message for a win including number of turns_
 
-*_Add restart button_
+* [] _Add restart button_
