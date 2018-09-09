@@ -16,7 +16,7 @@ _OR_
 
 ## Known Bugs
 
-_No bugs(At the moment)_
+_Cards flip correctly in phone emulation but do not show back on actual phone_
 
 ## Support and contact details
 
@@ -36,4 +36,5 @@ _HTML, CSS, Javascript_
 
 * [x] _Add restart button_
 
-* [ ] _Add rules for responsive behavior, esp. to play on mobile_
+* [x] _Add rules for responsive behavior, esp. to play on mobile_
+    Added rules that work a bit in emulation/small screen on laptop screen. Are not translating properly to gh-pages or actual phone. 
