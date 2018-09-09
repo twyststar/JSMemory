@@ -61,12 +61,13 @@ body {
   position: absolute;
   border-radius: 5px;
   background: rgb(25, 35, 44);
-   backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 /* Flip effect */
 .memory-card.flip {
   transform: rotateY(180deg);
+  backface-visibility: visible;
 }
 
 .front-face {
